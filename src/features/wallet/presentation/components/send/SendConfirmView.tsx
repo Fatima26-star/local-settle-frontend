@@ -69,7 +69,7 @@ export function SendConfirmView({
                 {recipient.alias}
               </span>
             )}
-            <span className="text-[#C2C7D0] text-xs font-mono break-all">
+            <span data-testid="resolved-recipient-address" className="text-[#C2C7D0] text-xs font-mono break-all">
               <span className="break-all">{recipient.address}</span>
             </span>
             {!recipient.exists && (
